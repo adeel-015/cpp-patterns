@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void print1(int n){
+//Functions of various patterns!
+
+void pattern1(int n){
     for (int i=0;i<n;i++){
         for (int j=0;j<n;j++){
             cout << "*";
@@ -9,7 +11,7 @@ void print1(int n){
         cout << endl;
     }
 }
-void print2(int n){
+void pattern2(int n){
     for (int i=0;i<n;i++){
         for (int j=0;j<=i;j++){
             cout << "*";
@@ -17,7 +19,7 @@ void print2(int n){
         cout << endl;
     }
 }
-void print3(int n){
+void pattern3(int n){
     for (int i=1;i<=n;i++){
         for (int j=1;j<=i;j++){
             cout << j;
@@ -25,7 +27,7 @@ void print3(int n){
         cout << endl;
     }
 }
-void print4(int n){
+void pattern4(int n){
     for (int i=1;i<=n;i++){
         for (int j=1;j<=i;j++){
             cout << i;
@@ -33,7 +35,7 @@ void print4(int n){
         cout << endl;
     }
 }
-void print5(int n){
+void pattern5(int n){
     for (int i=1;i<=n;i++){
         for (int j=1;j<=n-i+1;j++){
             cout << "*";
@@ -41,7 +43,7 @@ void print5(int n){
         cout << endl;
     }
 }
-void print6(int n){
+void pattern6(int n){
     for (int i=1;i<=n;i++){
         for (int j=1;j<=n-i+1;j++){
             cout << j;
@@ -49,7 +51,7 @@ void print6(int n){
         cout << endl;
     }
 }
-void print7(int n){
+void pattern7(int n){
     for (int i=1;i<=n;i++){
         //spaces
         for (int j=1;j<=n-i;j++){
@@ -63,7 +65,7 @@ void print7(int n){
         cout << endl;
     }
 }
-void print8(int n){
+void pattern8(int n){
     for (int i=1;i<=n;i++){
         for (int j=1;j<i;j++){
             cout << " ";
@@ -74,7 +76,30 @@ void print8(int n){
         cout << endl;
     }
 }
-void print10(int n){
+void pattern9(int n){
+    for (int i=1;i<=n;i++){
+        //spaces
+        for (int j=1;j<=n-i;j++){
+            cout << " ";
+        }
+
+        // stars
+        for (int j=1;j<=2*i-1;j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for (int i=1;i<=n;i++){
+        for (int j=1;j<i;j++){
+            cout << " ";
+        }
+        for (int j=1;j<=2*n - (2*i-1);j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+void pattern10(int n){
     for (int i=0;i<=2*n-1;i++){
         int stars = i;
         if (i>n) stars = 2*n-i;
@@ -84,7 +109,7 @@ void print10(int n){
         cout << endl;
     }
 }
-void print11(int n){
+void pattern11(int n){
     int start=1;
     for (int i=0;i<n;i++){
         if (i%2==0){
@@ -99,7 +124,7 @@ void print11(int n){
         cout << endl;
     }
 }
-void print12(int n){
+void pattern12(int n){
     for (int i=1;i<=n;i++){
         int iniS = 2*n-2-i;
         //num
@@ -118,7 +143,7 @@ void print12(int n){
         cout << endl;
     }
 }
-void print13(int n){
+void pattern13(int n){
     int num=1;
     for (int i=0;i<n;i++){
         for (int j=0;j<=i;j++){
@@ -128,7 +153,7 @@ void print13(int n){
         cout << endl;
     }
 }
-void print14(int n){
+void pattern14(int n){
     for (int i=0;i<n;i++){
         for (char ch='A';ch<='A'+i;ch++){
             cout << ch;
@@ -136,7 +161,7 @@ void print14(int n){
         cout << endl;
     }
 }
-void print15(int n){
+void pattern15(int n){
     for (int i=1;i<=n;i++){
         for (char ch='A';ch<='A'+(n-i);ch++){
             cout << ch;
@@ -144,7 +169,7 @@ void print15(int n){
         cout << endl;
     }
 }
-void print16(int n){
+void pattern16(int n){
     for (int i=0;i<n;i++){
         char ch='A'+i;
         for (int j=0;j<=i;j++){
@@ -153,7 +178,7 @@ void print16(int n){
         cout << endl;
     }
 }
-void print17(int n){
+void pattern17(int n){
     for (int i=0;i<n;i++){
         char ch='A';
         int breakpoint = (2*i+1)/2;
@@ -173,7 +198,7 @@ void print17(int n){
         cout << endl;
     }
 }
-void print18(int n){
+void pattern18(int n){
     for (int i=0;i<n;i++){
         //alphabets
         for (char ch='E'-i;ch<='E';ch++){
@@ -182,7 +207,7 @@ void print18(int n){
         cout << endl;
     }
 }
-void print19(int n){
+void pattern19(int n){
     for (int i=0;i<n;i++){
         int iniS = 2*i;
         //stars
@@ -220,7 +245,7 @@ void print19(int n){
         iniS -= 2;
     }
 }
-void print20(int n){
+void pattern20(int n){
     for (int i=0;i<n;i++){
         int iniS = 2*n-2*i;
         //stars
@@ -258,7 +283,7 @@ void print20(int n){
         cout << endl;
     }
 }
-void print21(int n){
+void pattern21(int n){
     for (int i=1;i<=n;i++){
         for (int j=1;j<=n;j++){
             if (j==1 || i==1 || i==n || j==n){
@@ -270,7 +295,7 @@ void print21(int n){
         cout << endl;
     }
 }
-void print22(int n){
+void pattern22(int n){
     for (int i=0;i<2*n-1;i++){
         for (int j=0;j<2*n-1;j++){
             int top = i;
@@ -283,8 +308,10 @@ void print22(int n){
     }
 }
 
+//to execute above functions,
+
 int main(){
     int n; cin >> n;
     cout << endl;
-    print12(n);
+    pattern12(n);  //Varies from Pattern 1-22 :)
 }
